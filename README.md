@@ -26,12 +26,25 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+
+The purpose of the game is to guess the secret number that is between a range based on difficulty. 
 - [ ] Detail which bugs you found.
+
+Bug 1: Hints worked backwards. When guess was below secret, the hint indicated to go lower and vice versa. 
+Bug 2: When difficulty is changed, range changes accordingly, but the blue box indicating to guess between a range does not match with difficulty range. 
+The bugs that were found are: 
 - [ ] Explain what fixes you applied.
+
+Fixed the hints to accurately represent direction of guess. Also ensured the blue box matched the the range based on the difficulty choosen. 
 
 ## 📸 Demo
 
 - [ ] [Insert a screenshot of your fixed, winning game here]
+
+![alt text](<Screenshot 2026-03-15 at 2.44.00 PM-1.png>) 
+
+
+
 
 ## 🚀 Stretch Features
 
