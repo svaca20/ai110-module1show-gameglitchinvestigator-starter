@@ -8,7 +8,7 @@ def get_range_for_difficulty(difficulty: str):
         return 1, 100
     if difficulty == "Hard":
         return 1, 50
-    return 1, 100 # FIXME: Logic breaks here
+    return 1, 100
 
 
 def parse_guess(raw: str):
@@ -35,7 +35,7 @@ def check_guess(guess, secret):
 
     try:
         if guess > secret:
-            return "Too High", "📉 Go LOWER!"
+            return "Too High", "📉 Go LOWER!" # Asked AI to identify where the mistake was coming from and how to fix the issue. 
         else:
             return "Too Low", "📈 Go HIGHER!"
     except TypeError:
@@ -107,7 +107,7 @@ if "history" not in st.session_state:
 st.subheader("Make a guess")
 
 st.info(
-    f"Guess a number between {low} and {high}. "
+    f"Guess a number between {low} and {high}. " # Asked AI to identify where the mistake was coming from and how to fix the issue.
     f"Attempts left: {attempt_limit - st.session_state.attempts}"
 )
 
